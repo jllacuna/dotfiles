@@ -18,3 +18,5 @@ sed "s|<url>|$giturl|" git/gitmessage.template > git/.gitmessage
 
 # tmux
 [ -e $HOME/.tmux.conf ] || ln -s $PWD/tmux/.tmux.conf $HOME/.tmux.conf
+
+./install/brew.sh
