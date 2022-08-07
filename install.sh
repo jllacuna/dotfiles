@@ -4,6 +4,10 @@
 [ -e $HOME/.zshrc ]    || ln -s $PWD/zsh/.zshrc $HOME/.zshrc
 [ -e $HOME/.zprofile ] || ln -s $PWD/zsh/.zprofile $HOME/.zprofile
 
+# ssh
+mkdir -p $HOME/.ssh/conf.d
+[ -e $HOME/.ssh/config ] || ln -s $PWD/ssh/config $HOME/.ssh/config
+
 # git
 giturl=`cat git/gitmessage.url`
 sed "s|<url>|$giturl|" git/gitmessage.template > git/.gitmessage

@@ -6,16 +6,18 @@ My dotfiles
 
 1. Create the file `git/.gitconfig.user` and configure your git `user.name` and `user.email`
 
-```
-[user]
-  name = First Last
-  email = ID+username@users.noreply.github.com
-```
+    ```
+    [user]
+      name = First Last
+      email = ID+username@users.noreply.github.com
+    ```
 
 2. Create the file `git/gitmessage.url` and enter the URL template to your bug tracker
 
-```
-https://domain.atlassian.net/browse/bug
-```
+    ```
+    https://domain.atlassian.net/browse/bug
+    ```
 
 3. Run `install.sh`
+
+4. Configure SSH hosts in `~/.ssh/conf.d/*.conf`
